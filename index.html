@@ -1,11 +1,849 @@
+comp 2
+.comp2
+В голосовом чате
+
+
+
+Текстовый канал
+Сервер Juniors.kz:8-группа
+Поиск
+
+Чат 8-группа
+4 июня 2025 г.
+
+Абылайхан Сагитович — 04.06.2025 16:58среда, 4 июня 2025 г. 16:58
+Следующие шаги:
+Очисти проект (обязательно после обновления Flutter):
+Bash
+
+flutter clean
+Получи зависимости (на всякий случай, чтобы убедиться, что все пакеты совместимы с новой версией Flutter):
+Bash
+
+flutter pub get
+Попробуй собрать APK-файл в релизном режиме:
+Bash
+
+flutter build apk --release
+27 июня 2025 г.
+
+Абылайхан Сагитович — 27.06.2025 16:51пятница, 27 июня 2025 г. 16:51
+model: 'gemini-1.5-flash'
+
+Абылайхан Сагитович — 27.06.2025 17:10пятница, 27 июня 2025 г. 17:10
+AIzaSyD23UKtFxozoi5E3F72qgL3hkRJFr7-geY
+2 июля 2025 г.
+
+Абылайхан Сагитович — 02.07.2025 18:05среда, 2 июля 2025 г. 18:05
+import java.util.Properties
+pluginManagement {
+    def flutterSdkPath = {
+        def properties = new Properties()
+        file("local.properties").withInputStream { properties.load(it) }
+        def flutterSdkPath = properties.getProperty("flutter.sdk")
+Раскрыть
+Раскрыть (27 строк)
+Посмотреть весь файл
+settings.gradle
+settings.gradle (1 кб)
+1 кб
+settings.gradle (1 кб)
+Загрузить settings.gradle (1 кб)Сменить язык
+4 июля 2025 г.
+
+Абылайхан Сагитович — 04.07.2025 17:41пятница, 4 июля 2025 г. 17:41
+name: weather_app
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+Раскрыть
+Раскрыть (97 строк)
+Посмотреть весь файл
+pubspec.yaml
+pubspec.yaml (5 кб)
+5 кб
+pubspec.yaml (5 кб)
+Загрузить pubspec.yaml (5 кб)Сменить язык
+[17:46]пятница, 4 июля 2025 г. 17:46
+screens
+[17:46]пятница, 4 июля 2025 г. 17:46
+// lib/screens/forecast_screen.dart
+import 'package:fl_chart/fl_chart.dart';
+import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
+
+class ForecastScreen extends StatelessWidget {
+Раскрыть
+Раскрыть (166 строк)
+Посмотреть весь файл
+forecast_screen.dart
+forecast_screen.dart (8 кб)
+8 кб
+forecast_screen.dart (8 кб)
+Загрузить forecast_screen.dart (8 кб)Сменить язык
+// home_screen.dart
+import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import '../services/weather_service.dart';
+import 'forecast_screen.dart';
+import 'package:intl/intl.dart';
+Раскрыть
+Раскрыть (425 строк)
+Посмотреть весь файл
+home_screen.dart
+home_screen.dart (18 кб)
+18 кб
+home_screen.dart (18 кб)
+Загрузить home_screen.dart (18 кб)Сменить язык
+// lib/screens/chat_screen.dart
+import 'package:flutter/material.dart';
+import '../services/gemini_service.dart';
+
+class ChatScreen extends StatefulWidget {
+  final String apiKey;
+Раскрыть
+Раскрыть (146 строк)
+Посмотреть весь файл
+chat_screen.dart
+chat_screen.dart (6 кб)
+6 кб
+chat_screen.dart (6 кб)
+Загрузить chat_screen.dart (6 кб)Сменить язык
+[17:46]пятница, 4 июля 2025 г. 17:46
+services
+
+Абылайхан Сагитович — 04.07.2025 17:49пятница, 4 июля 2025 г. 17:49
+// lib/services/gemini_service.dart
+import 'package:google_generative_ai/google_generative_ai.dart';
+
+class GeminiService {
+  final String _apiKey; // Ваш API-ключ Gemini
+Раскрыть
+Раскрыть (69 строк)
+Посмотреть весь файл
+gemini_service.dart
+gemini_service.dart (5 кб)
+5 кб
+gemini_service.dart (5 кб)
+Загрузить gemini_service.dart (5 кб)Сменить язык
+// lib/services/weather_service.dart
+import 'dart:convert';
+import 'package:http/http.dart' as http;
+//import 'package:intl/intl.dart'; // Добавляем импорт для DateFormat
+
+// weather_service.dart
+Раскрыть
+Раскрыть (67 строк)
+Посмотреть весь файл
+weather_service.dart
+weather_service.dart (3 кб)
+3 кб
+weather_service.dart (3 кб)
+Загрузить weather_service.dart (3 кб)Сменить язык
+[17:50]пятница, 4 июля 2025 г. 17:50
+import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
+import 'package:intl/date_symbol_data_local.dart';
+import 'screens/home_screen.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+Раскрыть
+Раскрыть (128 строк)
+Посмотреть весь файл
+main.dart
+main.dart (4 кб)
+4 кб
+main.dart (4 кб)
+Загрузить main.dart (4 кб)Сменить язык
+9 июля 2025 г.
+
+Абылайхан Сагитович — 09.07.2025 16:54среда, 9 июля 2025 г. 16:54
+
+
+
+Абылайхан Сагитович — 09.07.2025 17:19среда, 9 июля 2025 г. 17:19
+#доступ в интернет
+в папке android\app\src\main есть файл AndroidManifest.xml
+в нем во вторую строку пишем 
+<uses-permission android:name="android.permission.INTERNET"/>
+выглядеть будет так
+[17:20]среда, 9 июля 2025 г. 17:20
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:label="mood_tracker"
+        android:name="${applicationName}"
+        android:icon="@mipmap/ic_launcher">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:taskAffinity=""
+            android:theme="@style/LaunchTheme"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="io.flutter.embedding.android.NormalTheme"
+                android:resource="@style/NormalTheme"
+                />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+    </application>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.PROCESS_TEXT"/>
+            <data android:mimeType="text/plain"/>
+        </intent>
+    </queries>
+</manifest>
+
+Абылайхан Сагитович — 09.07.2025 17:39среда, 9 июля 2025 г. 17:39
+
+
+
+
+
+
+
+11 июля 2025 г.
+
+Абылайхан Сагитович — 11.07.2025 17:51пятница, 11 июля 2025 г. 17:51
+
+22 октября 2025 г.
+
+Абылайхан Сагитович — 22.10.2025 18:07среда, 22 октября 2025 г. 18:07
+https://www.feedough.com/ai-prompt-generator/
+Feedough
+​The Free AI Prompt Generator [Unlimited & No Login]
+You can always take a help of an AI prompt generator to create perfect prompts for your preferred text-to-text or text-to-image AI.
+
+[18:07]среда, 22 октября 2025 г. 18:07
+https://stitch.withgoogle.com/
+Stitch
+Stitch - Design with AI
+Stitch generates UIs for mobile and web applications, making design ideation fast and easy.
+
+[18:07]среда, 22 октября 2025 г. 18:07
+https://studio.firebase.google.com/
+Firebase Studio
+Firebase Studio is an entirely web-based workspace for full-stack application development, complete with the latest generative AI from Gemini, and full-fidelity app previews, powered by cloud emulators.
+
+24 октября 2025 г.
+
+Абылайхан Сагитович — 24.10.2025 13:28пятница, 24 октября 2025 г. 13:28
+https://itproger.com/course/telegram-bot
+itProger - Сообщество программистов
+Разработка Telegram Ботов на Python
+Представляем курс для начинающих по разработке Telegram ботов на Python. За курс вы с нуля научитесь создавать Телеграм ботов в разных жанрах и с использованием разных библиотек.
+
+
+Абылайхан Сагитович — 24.10.2025 17:27пятница, 24 октября 2025 г. 17:27
+https://pypi.org/project/pyTelegramBotAPI/
+PyPI
+pyTelegramBotAPI
+Python Telegram bot API.
+
+
+Абылайхан Сагитович — 24.10.2025 18:14пятница, 24 октября 2025 г. 18:14
+import telebot
+
+bot = telebot.TeleBot('8490445796:AAGDuRExNN2C05H22YPOMLdZ2fjVYMdGHag')
+
+@bot.message_handler(commands=['start'])
+def main(message):
+    bot.send_message(message.chat.id, 'Привет')
+
+bot.polling(none_stop=True)
+29 октября 2025 г.
+
+comp 2 — 29.10.2025 17:56среда, 29 октября 2025 г. 17:56
+import telebot
+import webbrowser
+
+bot = telebot.TeleBot('8250552599:AAHRkCgJ8u0BAF8lV0bSTGVHT1FvHuAVlsk')
+
+@bot.message_handler(commands=['site','website'])
+def site(message):
+    webbrowser.open('https://store.steampowered.com/?l=russian')
+
+@bot.message_handler(commands=['start'])
+def main(message):
+    bot.send_message(message.chat.id, f'Привет {message.from_user.first_name} {message.from_user.last_name}')
+
+@bot.message_handler(commands=['help'])
+def main(message):
+    bot.send_message(message.chat.id, '<b>Зря</b>', parse_mode='html')
+
+@bot.message_handler()
+def info(message):
+    if message.text.lower()== 'привет':
+        bot.send_message(message.chat.id, f'Привет, {message.from_user.first_name} {message.from_user.last_name}')
+    elif message.text.lower()== 'id':
+        bot.reply_to(message, f'ID: {message.from_user.id}')
+
+bot.polling(none_stop=True)
+Steam Store
+Steam is the ultimate destination for playing, discussing, and creating games.
+
+
+Comp 5 — 29.10.2025 17:59среда, 29 октября 2025 г. 17:59
+@bot.message_handler(command=['site'])
+    url_to_open = "https://www.juniors.kz" 
+    
+    try:
+        webbrowser.open(url_to_open)
+
+        await update.message.reply_text(
+            f"Был запущен веб-браузер на компьютере и открыт сайт: {url_to_open}"
+        )
+        logger.info(f"Открыт сайт: {url_to_open}")
+        
+    except Exception as e:
+        await update.message.reply_text(f"Произошла ошибка при попытке открыть браузер: {e}")
+        logger.error(f"Ошибка открытия сайта: {e}")
+ (изменено)среда, 29 октября 2025 г. 17:59
+31 октября 2025 г.
+
+Comp 5 — 31.10.2025 17:54пятница, 31 октября 2025 г. 17:54
+pip install python-telegram-bot
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup # Добавили импорты для кнопок
+from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
+import logging
+import webbrowser
+
+TOKEN = "токен" 
+Раскрыть
+Раскрыть (95 строк)
+Посмотреть весь файл
+main.py
+main.py (5 кб)
+5 кб
+main.py (5 кб)
+Загрузить main.py (5 кб)Сменить язык
+
+Абылайхан Сагитович — 31.10.2025 18:13пятница, 31 октября 2025 г. 18:13
+import telebot
+import webbrowser
+from telebot import types
+
+bot = telebot.TeleBot('8490445796:AAGDuRExNN2C05H22YPOMLdZ2fjVYMdGHag')
+@bot.message_handler(content_types=['photo'])
+Раскрыть
+Раскрыть (37 строк)
+Посмотреть весь файл
+main.py
+main.py (2 кб)
+2 кб
+main.py (2 кб)
+Загрузить main.py (2 кб)Сменить язык
+
+Абылайхан Сагитович — 31.10.2025 18:23пятница, 31 октября 2025 г. 18:23
+@bot.callback_query_handler(func= lambda callback: True) 
+def callback_message(callback):
+    if callback_data == 'delete':
+        bot.delete_message(callback.message.chat.id, callback.message.messsage_id - 1)
+    if callback_data == 'edit':
+        bot.edit_message_text('Edit text', callback.message.chat.id, callback.message.messsage_id)
+5 ноября 2025 г.
+
+Comp 5 — 05.11.2025 17:51среда, 5 ноября 2025 г. 17:51
+ываывавыаыва
+
+Абылайхан Сагитович — 05.11.2025 17:52среда, 5 ноября 2025 г. 17:52
+import telebot
+import webbrowser
+from telebot import types
+
+bot = telebot.TeleBot('8490445796:AAGDuRExNN2C05H22YPOMLdZ2fjVYMdGHag')
+@bot.message_handler(content_types=['photo'])
+Раскрыть
+Раскрыть (50 строк)
+Посмотреть весь файл
+main.py
+main.py (3 кб)
+3 кб
+main.py (3 кб)
+Загрузить main.py (3 кб)Сменить язык
+
+Абылайхан Сагитович — 05.11.2025 18:05среда, 5 ноября 2025 г. 18:05
+import telebot
+import webbrowser
+from telebot import types
+
+bot = telebot.TeleBot('8490445796:AAGDuRExNN2C05H22YPOMLdZ2fjVYMdGHag')
+@bot.message_handler(content_types=['photo'])
+def get_photo(message):
+    markup = types.InlineKeyboardMarkup()
+    btn1 = types.InlineKeyboardButton('Перейти на сайт', url='https://juniors.kz'/)
+    markup.row(btn1)
+    btn2 = types.InlineKeyboardButton('delete', callback_data='delete')
+    btn3 = types.InlineKeyboardButton('edit', callback_data='edit')
+    markup.row(btn2, btn3)
+    bot.reply_to(message, 'Крутое фото', reply_markup=markup)
+
+@bot.message_handler(commands=['site'])
+def site(message):
+    webbrowser.open('https://juniors.kz'/)
+
+@bot.message_handler(commands=['start'])
+def start(message):
+    markup = types.ReplyKeyboardMarkup()
+    btn1 = types.KeyboardButton('Перейти на сайт')
+    markup.row(btn1)
+    btn2 = types.KeyboardButton('delete')
+    btn3 = types.KeyboardButton('edit')
+    markup.row(btn2, btn3)
+    bot.send_message(message.chat.id, 'Привет ', reply_markup=markup)
+
+@bot.message_handler(commands=['help'])
+def main(message):
+    bot.send_message(message.chat.id, '<b>Help</b> <em><u>information</u></em>', parse_mode='html')
+
+@bot.callback_query_handler(func=lambda callback: True)
+def callback_message(callback):
+    if callback.data == 'delete':
+        bot.delete_message(callback.message.chat.id, callback.message.message_id - 1)
+    elif callback.data == 'edit':
+        bot.edit_message_text('Edit text', callback.message.chat.id, callback.message.message_id)
+
+@bot.message_handler()
+def info(message):
+    if message.text.lower() == 'привет':
+        bot.send_message(message.chat.id, f'Привет {message.from_user.first_name}')
+    elif message.text.lower() == 'id':
+        bot.reply_to(message, f'ID {message.from_user.id}')
+
+
+
+bot.polling(none_stop=True)
+7 ноября 2025 г.
+
+Абылайхан Сагитович — 07.11.2025 17:10пятница, 7 ноября 2025 г. 17:10
+import telebot
+import webbrowser
+from telebot import types
+
+bot = telebot.TeleBot('8490445796:AAGDuRExNN2C05H22YPOMLdZ2fjVYMdGHag')
+@bot.message_handler(content_types=['photo'])
+Раскрыть
+Раскрыть (60 строк)
+Посмотреть весь файл
+main.py
+main.py (3 кб)
+3 кб
+main.py (3 кб)
+Загрузить main.py (3 кб)Сменить язык
+12 ноября 2025 г.
+
+Абылайхан Сагитович — 12.11.2025 17:29среда, 12 ноября 2025 г. 17:29
+import telebot
+import sqlite3
+bot = telebot.TeleBot('8490445796:AAGDuRExNN2C05H22YPOMLdZ2fjVYMdGHag')
+
+@bot.message_handler(commands=['start'])
+def start(message):
+    conn = sqlite3.connect('users.db')
+    cur = conn.cursor()
+    cur.execute('CREATE TABLE IF NOT EXISTS users(id int auto_increment primary key, ' \
+    'name varchar(50), pass varchar(50)')
+    conn.commit()
+
+
+bot.polling(none_stop=True)
+
+Абылайхан Сагитович — 12.11.2025 18:12среда, 12 ноября 2025 г. 18:12
+import telebot
+import sqlite3
+bot = telebot.TeleBot('8490445796:AAGDuRExNN2C05H22YPOMLdZ2fjVYMdGHag')
+name  = None
+@bot.message_handler(commands=['start'])
+def start(message):
+Раскрыть
+Раскрыть (102 строки)
+Посмотреть весь файл
+message.txt
+message.txt (4 кб)
+4 кб
+message.txt (4 кб)
+Загрузить message.txt (4 кб)Сменить язык
+[18:18]среда, 12 ноября 2025 г. 18:18
+8568350627:AAHDyFuG4gVxOQf53a4Sscr3WU6zWS-aIb0
+[18:18]среда, 12 ноября 2025 г. 18:18
+@bogdan03bot
+14 ноября 2025 г.
+
+Абылайхан Сагитович — 14.11.2025 17:12пятница, 14 ноября 2025 г. 17:12
+import telebot
+import sqlite3
+bot = telebot.TeleBot('8490445796:AAGDuRExNN2C05H22YPOMLdZ2fjVYMdGHag')
+name  = None
+@bot.message_handler(commands=['start'])
+def start(message):
+    conn = sqlite3.connect('users.db')
+    cur = conn.cursor()
+    cur.execute('CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, password TEXT)')
+    conn.commit()
+    cur.close()
+    conn.close()
+    bot.send_message(message.chat.id, 'Введите логин')
+    bot.register_next_step_handler(message, user_name)
+
+def user_name(message):
+    global name
+    name = message.text.strip()
+    bot.send_message(message.chat.id, 'Введите пароль')
+    bot.register_next_step_handler(message, user_pass, name)
+
+def user_pass(message, name):
+    password = message.text.strip()
+    conn = sqlite3.connect('users.db')
+    cur = conn.cursor()
+    cur.execute('INSERT INTO users(name, password) VALUES(?, ?)', (name, password))
+    conn.commit()
+    cur.close()
+    conn.close()
+    markup = telebot.types.InlineKeyboardMarkup()
+    markup.add(telebot.types.InlineKeyboardButton('Список пользователей', callback_data='users'))
+
+
+    bot.send_message(message.chat.id, 'Вы успешно зарегистрировались', reply_markup = markup)
+@bot.callback_query_handler(func=lambda call: True)
+def callback(call):
+    conn = sqlite3.connect('users.db')
+    cur = conn.cursor()
+    cur.execute('SELECT * FROM users')
+    users = cur.fetchall()
+
+    info = ''
+    for el in users:
+        # el = (id, name, password)
+        info += f'ID: {el[0]}, Name: {el[1]}, Password: {el[2]}\n'
+
+    cur.close()
+    conn.close()
+
+    if not info:
+        info = 'Пользователей нет.'
+    bot.send_message(call.message.chat.id, info)
+
+bot.polling(none_stop=True)
+
+Comp 7 — 14.11.2025 17:27пятница, 14 ноября 2025 г. 17:27
+d81061c8ade0720cfe0c7b70c1f71591
+
+Абылайхан Сагитович — 14.11.2025 17:30пятница, 14 ноября 2025 г. 17:30
+pip install requests
+
+Абылайхан Сагитович — 14.11.2025 17:55пятница, 14 ноября 2025 г. 17:55
+@bot.message_handler(content_types=['text'])
+def weather(message):
+    city = message.text.strip().lower()
+    res = requests.get(f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={API}&units=metric&lang=ru')
+    data = json.loads(res.text)
+    bot.send_message(message.chat.id, f'Сейчас в городе {city} {data["main"]["temp"]}°C\n')
+
+Абылайхан Сагитович — 14.11.2025 18:04пятница, 14 ноября 2025 г. 18:04
+https://www.youtube.com/watch?v=v8Nqa78v2tE&t=2s
+с 11 минуты про картинки
+YouTube
+Гоша Дударь
+Телеграм бот на Python / #5 – Бот для полу...
+
+
+Comp 7 — 14.11.2025 18:32пятница, 14 ноября 2025 г. 18:32
+def add_text_to_image(image_path, text_to_add, output_path, font_path=None, font_size=18, text_color=(255, 255, 255), text_position=(10, 10)):
+    try:
+        image = Image.open(image_path)
+        draw = ImageDraw.Draw(image)
+        try:
+            if font_path: font = ImageFont.truetype(font=font_path, size=font_size)
+            else: font = ImageFont.load_default() 
+        except IOError:
+            print(f"Шрифт {font_path} не найден. Используется шрифт по умолчанию.")
+            font = ImageFont.load_default()
+        draw.text(text_position, text_to_add, font=font, fill=text_color)
+        image.save(output_path)
+        print(f"Изображение успешно сохранено как {output_path}")
+    except FileNotFoundError:
+        print(f"Ошибка: файл изображения '{image_path}' не найден.")
+    except Exception as e:
+        print(f"Произошла ошибка: {e}")
+[18:32]пятница, 14 ноября 2025 г. 18:32
+@bot.message_handler(content_types=['text'])
+def weather(message):
+    city = message.text.strip()
+    res = requests.get(f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={API}&units=metric&lang=ru')
+    data = json.loads(res.text)
+    if data["cod"] != 200:
+        bot.send_message(message.chat.id, 'Город не найден! Пожалуйста, проверьте правильность написания и попробуйте снова.')
+        return
+    print(data)
+    description = data["weather"][0]["description"]
+
+    txtcolor = (0, 0, 0)
+    match description:
+        case 'ясно':
+            inputimg = 'img/sunny.jpg'
+            txtcolor = (0, 0, 0)
+        case 'небольшая облачность' | 'переменная облачность':
+            inputimg = 'img/partlycloudy.jpg'
+            txtcolor = (0, 0, 0)
+        case 'облачно с прояснениями' | 'пасмурно':
+            inputimg = 'img/cloudy.jpg'
+            txtcolor = (0, 0, 0)
+        case 'дождь' | 'небольшой дождь' | 'ливень':
+            inputimg = 'img/rain.jpg'
+            txtcolor = (0, 0, 0)
+        case 'снег' | 'небольшой снег':
+            inputimg = 'img/snow.jpg'
+            txtcolor = (0, 0, 0)
+        case :
+            inputimg = 'img/sunny.jpg'
+            txtcolor = (0, 0, 0)
+
+    outputimg = 'img/output.jpg'
+    customfont = 'arial.ttf'
+
+    add_text_to_image(
+            image_path=inputimg,
+            text_to_add=f'{city.title()}:\n{data["main"]["temp"]} градусов\n\n{description}',
+            output_path=outputimg,
+            font_path=customfont,
+            font_size=35,
+            text_color=txtcolor,
+            text_position=(50, 50)
+        )
+    bot.send_message(message.chat.id, f'Сейчас в городе {city} {data["main"]["temp"]}°C\n')
+    bot.send_photo(message.chat.id, open(outputimg, 'rb'))
+[18:32]пятница, 14 ноября 2025 г. 18:32
+import os
+from PIL import Image, ImageDraw, ImageFont
+19 ноября 2025 г.
+
+Абылайхан Сагитович — 19.11.2025 17:37среда, 19 ноября 2025 г. 17:37
+import telebot
+import webbrowser
+import requests
+import json
+
+API = 'd81061c8ade0720cfe0c7b70c1f71591'
+bot = telebot.TeleBot('8490445796:AAGDuRExNN2C05H22YPOMLdZ2fjVYMdGHag')
+
+@bot.message_handler(commands=['start'])
+def start(message):
+    bot.send_message(message.chat.id, 'Привет! Я бот о погоде!')
+
+@bot.message_handler(content_types=['text'])
+def weather(message):
+    city = message.text.strip().lower()
+    res = requests.get(f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={API}&units=metric&lang=ru')
+    data = json.loads(res.text)
+    description = data['weather'][0]['description']
+    temp = data['main']['temp']
+    bot.send_message(message.chat.id, f'Сейчас в городе {city} {temp} °C\n {description}' )
+
+    image = 'sun.jpg'
+    if description == 'дождь' or description == 'ливень' or description == 'небольшой дождь' or description == 'облачно с прояснениями':
+        image = 'rain.png'
+    elif description == 'ясно':
+        image = 'sun.jpg'
+    elif description == 'снег':
+        image = 'snow.png'
+    file = open('./images/' + image, 'rb')
+    bot.send_photo(message.chat.id, file)
+bot.polling(none_stop=True)
+[17:41]среда, 19 ноября 2025 г. 17:41
+pip install aiogram
+26 ноября 2025 г.
+
+Абылайхан Сагитович — 26.11.2025 17:20среда, 26 ноября 2025 г. 17:20
+pip install --upgrade pip
+pip install aiogram==2.25.2 (изменено)среда, 26 ноября 2025 г. 17:20
+
+Comp 5 — 26.11.2025 17:41среда, 26 ноября 2025 г. 17:41
+import asyncio
+from aiogram import Bot, Dispatcher, types
+from aiogram.types.web_app_info import WebAppInfo
+from aiogram.types import ReplyKeyboardMarkup, KeyboardButton 
+from aiogram.filters import Command
+
+BOT_TOKEN = '8510858201:AAEsznXRGIFkwwYU05bNQmfAtEid3LTzXYY' 
+bot = Bot(token=BOT_TOKEN)
+dp = Dispatcher()
+
+@dp.message(Command("start")) 
+async def start(message: types.Message):
+    markup = ReplyKeyboardMarkup(
+        keyboard=[
+            [KeyboardButton(text='Открыть веб страницу', web_app=WebAppInfo(url='https://juniors.kz'))]
+        ],
+        resize_keyboard=True
+    )
+    
+    await message.answer('Привет, мой друг!', reply_markup=markup)
+
+async def main():
+    await dp.start_polling(bot)
+
+if __name__ == "__main__":
+    try:
+        asyncio.run(main())
+    except KeyboardInterrupt:
+        print("Бот остановлен вручную.")
+
+Абылайхан Сагитович — 26.11.2025 17:55среда, 26 ноября 2025 г. 17:55
+<!doctype html>
+<html>
+<head> 
+<meta charset="UTF-8"> 
+<title>Juniors.kz</title> 
+</head> 
+<body> 
+<h1>Welcome to Juniors.kz!</h1>
+<p>Your gateway to learning and growth.</p>
+</body> 
+</html>
+28 ноября 2025 г.
+
+Абылайхан Сагитович — 28.11.2025 18:16пятница, 28 ноября 2025 г. 18:16
 <!doctype html>
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Juniors.kz — Заявка</title>
+Раскрыть
+Раскрыть (252 строки)
+Посмотреть весь файл
+index.html
+index.html (8 кб)
+8 кб
+index.html (8 кб)
+Загрузить index.html (8 кб)Сменить язык
+3 декабря 2025 г.
+НОВОЕ
+
+Comp10 — 17:34среда, 3 декабря 2025 г. 17:34
+в случае ошибки версии & C:/Users/sgdcj/AppData/Local/Programs/Python/Python310/python.exe d:/telegramboterdar/main.py
+
+Абылайхан Сагитович — 17:57среда, 3 декабря 2025 г. 17:57
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Juniors.kz — Community</title>
+Раскрыть
+Раскрыть (464 строки)
+Посмотреть весь файл
+index.html
+index.html (12 кб)
+12 кб
+index.html (12 кб)
+Загрузить index.html (12 кб)Сменить язык
+Ответить
+Переслать
+Ещё
+
+Написать #8-группа
+﻿
+Помогите друзьям прокачаться! Дарите им крутые бонусы для чата с помощью Nitro.
+Отправить GIF
+Отправьте стикер
+Запустить приложения
+Список участников «8-группа» (канал)
+Активность, 5 участников
+Активность — 5
+
+Абылайхан Сагитович
+Абылайхан Сагитович
+Comet
+1 д. назад
+x3 д. подряд
+Значок приложения для Comet
+
+comp6
+comp6
+Comet
+1 д. назад
+Значок приложения для Comet
+
+Comp 8
+Comp 8
+Roblox
+2 д. назад
+Значок приложения для Roblox
+В сети, 9 участниковВ сети — 9
+
+Comp 1
+В голосовом чате
+
+comp 2
+В голосовом чате
+
+Comp 4
+В голосовом чате
+
+Comp 5
+
+Comp 7
+•
+фщшвыарфыватанегрыжжжжж
+
+Comp 8
+В голосовом чате
+
+Comp10
+В голосовом чате
+
+comp6
+Roblox
++1
+
+Абылайхан Сагитович
+Владелец сервера
+Демонстрирует свой экран
+Не в сети, 27 участниковНе в сети — 27
+
+............
+
+
+3060TI
+
+adkoze
+
+alto0s
+
+CS2
+
+asset
+
+Ast
+
+BADIes
+
+Comp 3
+Комната для учёбы
+Абылайхан Сагитович
+7
+Наблюдатели — 7
+
+
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Juniors.kz — Community</title>
 <style>
-  /* Учет безопасных отступов для iOS/Android webview */
   :root {
     --tg-blue: #2A9DF4;
     --bg: #f7f9fb;
@@ -14,7 +852,8 @@
     --input-border: #e6eef3;
     --radius: 12px;
   }
-  html,body {
+  
+  html, body {
     height: 100%;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
@@ -29,23 +868,156 @@
     padding: 16px;
   }
 
-  .card {
+  /* === ГЛАВНАЯ СТРАНИЦА === */
+  #mainPage {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .header {
+    text-align: center;
+    padding: 40px 16px 20px;
+  }
+
+  .logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--tg-blue);
+    margin: 0 0 10px 0;
+  }
+
+  .tagline {
+    font-size: 14px;
+    color: var(--muted);
+    margin: 0 0 30px 0;
+  }
+
+  .courses-grid {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .course-card {
     background: var(--card);
     border-radius: var(--radius);
-    padding: 14px;
+    padding: 16px;
     box-shadow: 0 1px 0 rgba(23,26,28,0.03), 0 8px 20px rgba(9,12,14,0.04);
+    text-align: center;
   }
 
-  .title {
-    font-size: 18px;
-    margin: 0 0 10px 0;
+  .course-icon {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .course-name {
+    font-size: 14px;
+    font-weight: 600;
     color: #13171a;
+    margin: 0;
   }
 
-  .desc {
-    margin: 0 0 12px 0;
+  .course-desc {
+    font-size: 12px;
     color: var(--muted);
-    font-size: 13px;
+    margin: 6px 0 0 0;
+  }
+
+  .footer-action {
+    padding: 16px;
+    background: var(--card);
+    border-top: 1px solid var(--input-border);
+  }
+
+  .btn-register {
+    width: 100%;
+    padding: 14px;
+    font-size: 15px;
+    border-radius: 12px;
+    border: none;
+    background: var(--tg-blue);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 0 rgba(0,0,0,0.04);
+  }
+
+  .btn-register:active {
+    opacity: 0.85;
+  }
+
+  /* === МОДАЛЬ РЕГИСТРАЦИЯ === */
+  #registrationModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  #registrationModal.show {
+    display: flex;
+  }
+
+  .modal-content {
+    background: var(--card);
+    border-radius: 16px 16px 0 0;
+    padding: 20px 16px 32px;
+    max-height: 90vh;
+    overflow-y: auto;
+    animation: slideUp 0.3s ease-out;
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .modal-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #13171a;
+    margin: 0;
+  }
+
+  .modal-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--muted);
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form-group {
+    margin-bottom: 16px;
   }
 
   label {
@@ -53,6 +1025,7 @@
     font-size: 13px;
     color: var(--muted);
     margin-bottom: 6px;
+    font-weight: 500;
   }
 
   .input {
@@ -60,7 +1033,6 @@
     width: 100%;
     height: 44px;
     padding: 8px 12px;
-    margin-bottom: 12px;
     border: 1px solid var(--input-border);
     border-radius: 10px;
     background: #fff;
@@ -75,12 +1047,22 @@
   .hint {
     font-size: 12px;
     color: #97a5b3;
-    margin-bottom: 12px;
+    margin-top: 6px;
   }
 
-  .tg-submit {
+  .error-msg {
+    font-size: 12px;
+    color: #d74242;
+    margin-top: 4px;
+    display: none;
+  }
+
+  .error-msg.show {
+    display: block;
+  }
+
+  .btn-submit {
     width: 100%;
-    display: inline-block;
     padding: 12px 14px;
     font-size: 15px;
     border-radius: 12px;
@@ -89,77 +1071,176 @@
     color: #fff;
     font-weight: 600;
     cursor: pointer;
+    margin-top: 20px;
     box-shadow: 0 2px 0 rgba(0,0,0,0.04);
   }
 
-  .tg-submit[disabled] {
+  .btn-submit:disabled {
     opacity: 0.6;
     cursor: not-allowed;
   }
 
-  /* Fallback small footer */
-  .footer {
+  .privacy-text {
+    font-size: 11px;
+    color: #97a5b3;
+    margin-top: 12px;
     text-align: center;
-    margin-top: 10px;
-    color: #9aa6b3;
-    font-size: 12px;
   }
 
   @media (max-width: 420px) {
     .container { padding: 8px; }
-    .card { padding: 12px; }
-    .input { height: 42px; }
+    .courses-grid { gap: 10px; }
+    .header { padding: 30px 16px 15px; }
   }
 </style>
 </head>
 <body>
-<div class="container">
-  <div class="card">
-    <h1 class="title">Оставить заявку</h1>
-    <p class="desc">Заполните форму — данные будут отправлены боту Telegram.</p>
 
-    <form id="applicationForm" onsubmit="return false;">
-      <label for="firstName">Имя</label>
-      <input id="firstName" class="input" type="text" name="firstName" placeholder="Ваше имя" required>
+<!-- ГЛАВНАЯ СТРАНИЦА -->
+<div id="mainPage">
+  <div class="header">
+    <h1 class="logo">Juniors.kz</h1>
+    <p class="tagline">Community для студентов IT-направлений</p>
+  </div>
 
-      <label for="lastName">Фамилия</label>
-      <input id="lastName" class="input" type="text" name="lastName" placeholder="Ваша фамилия" required>
+  <div class="courses-grid">
+    <div class="course-card">
+      <div class="course-icon">💻</div>
+      <h3 class="course-name">Web Development</h3>
+      <p class="course-desc">Frontend & Backend</p>
+    </div>
+    <div class="course-card">
+      <div class="course-icon">📱</div>
+      <h3 class="course-name">Mobile Apps</h3>
+      <p class="course-desc">iOS & Android</p>
+    </div>
+    <div class="course-card">
+      <div class="course-icon">🤖</div>
+      <h3 class="course-name">AI & ML</h3>
+      <p class="course-desc">Machine Learning</p>
+    </div>
+    <div class="course-card">
+      <div class="course-icon">🎮</div>
+      <h3 class="course-name">Game Dev</h3>
+      <p class="course-desc">Unity & Unreal</p>
+    </div>
+    <div class="course-card">
+      <div class="course-icon">☁️</div>
+      <h3 class="course-name">Cloud & DevOps</h3>
+      <p class="course-desc">AWS, Docker</p>
+    </div>
+    <div class="course-card">
+      <div class="course-icon">🔒</div>
+      <h3 class="course-name">Cybersecurity</h3>
+      <p class="course-desc">Безопасность</p>
+    </div>
+  </div>
 
-      <label for="email">E‑mail</label>
-      <input id="email" class="input" type="email" name="email" placeholder="example@mail.com" required>
+  <div class="footer-action">
+    <button id="mainRegisterBtn" class="btn-register">Присоединиться</button>
+  </div>
+</div>
 
-      <label for="phone">Телефон</label>
-      <input id="phone" class="input" type="tel" name="phone" placeholder="+7 (777) 123-45-67" inputmode="tel" required>
+<!-- МОДАЛЬ РЕГИСТРАЦИИ -->
+<div id="registrationModal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 class="modal-title">Регистрация</h2>
+      <button class="modal-close" id="closeModalBtn">✕</button>
+    </div>
 
-      <p class="hint" id="errorMsg" style="display:none;color:#d74242;"></p>
+    <form id="registrationForm" onsubmit="return false;">
+      <div class="form-group">
+        <label for="firstName">Имя *</label>
+        <input id="firstName" class="input" type="text" name="firstName" placeholder="Ваше имя" required>
+        <div class="error-msg" id="errorFirstName"></div>
+      </div>
 
-      <!-- Fallback button, visible outside Telegram WebApp -->
-      <button id="fallbackSend" class="tg-submit" type="button">Отправить заявку</button>
+      <div class="form-group">
+        <label for="lastName">Фамилия *</label>
+        <input id="lastName" class="input" type="text" name="lastName" placeholder="Ваша фамилия" required>
+        <div class="error-msg" id="errorLastName"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">E‑mail *</label>
+        <input id="email" class="input" type="email" name="email" placeholder="example@mail.com" required>
+        <div class="error-msg" id="errorEmail"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Телефон *</label>
+        <input id="phone" class="input" type="tel" name="phone" placeholder="+7 (777) 123-45-67" inputmode="tel" required>
+        <div class="hint">Формат: +7 (ХХХ) ХХХ-ХХ-ХХ</div>
+        <div class="error-msg" id="errorPhone"></div>
+      </div>
+
+      <button id="submitBtn" class="btn-submit" type="button">Зарегистрироваться</button>
+      <p class="privacy-text">Ваши данные будут использованы только для связи</p>
     </form>
-
-    <div class="footer">Ваши данные будут использованы только для связи.</div>
   </div>
 </div>
 
 <script>
-  // Инициализация Telegram WebApp
   const tg = window.Telegram && window.Telegram.WebApp ? window.Telegram.WebApp : null;
+
+  // DOM элементы
+  const mainPage = document.getElementById('mainPage');
+  const registrationModal = document.getElementById('registrationModal');
+  const mainRegisterBtn = document.getElementById('mainRegisterBtn');
+  const closeModalBtn = document.getElementById('closeModalBtn');
+  const submitBtn = document.getElementById('submitBtn');
 
   const firstName = document.getElementById('firstName');
   const lastName = document.getElementById('lastName');
   const email = document.getElementById('email');
   const phone = document.getElementById('phone');
-  const form = document.getElementById('applicationForm');
-  const fallbackBtn = document.getElementById('fallbackSend');
-  const errorMsg = document.getElementById('errorMsg');
 
-  // Валидация базовая
+  // Валидация
   function isValidEmail(e) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e);
   }
+
   function isValidPhone(p) {
-    // Простая проверка: цифры и +, минимум 7 цифр
     return /\+?\d{7,15}/.test(p.replace(/\s|[-()]/g, ""));
+  }
+
+  function clearErrors() {
+    document.getElementById('errorFirstName').classList.remove('show');
+    document.getElementById('errorLastName').classList.remove('show');
+    document.getElementById('errorEmail').classList.remove('show');
+    document.getElementById('errorPhone').classList.remove('show');
+  }
+
+  function validate() {
+    clearErrors();
+    let isValid = true;
+
+    if (!firstName.value.trim()) {
+      document.getElementById('errorFirstName').textContent = "Укажите имя";
+      document.getElementById('errorFirstName').classList.add('show');
+      isValid = false;
+    }
+
+    if (!lastName.value.trim()) {
+      document.getElementById('errorLastName').textContent = "Укажите фамилию";
+      document.getElementById('errorLastName').classList.add('show');
+      isValid = false;
+    }
+
+    if (!isValidEmail(email.value.trim())) {
+      document.getElementById('errorEmail').textContent = "Некорректный e‑mail";
+      document.getElementById('errorEmail').classList.add('show');
+      isValid = false;
+    }
+
+    if (!isValidPhone(phone.value.trim())) {
+      document.getElementById('errorPhone').textContent = "Некорректный телефон";
+      document.getElementById('errorPhone').classList.add('show');
+      isValid = false;
+    }
+
+    return isValid;
   }
 
   function gatherData() {
@@ -171,83 +1252,52 @@
     };
   }
 
-  function validate() {
-    const data = gatherData();
-    if (!data.firstName || !data.lastName) {
-      errorMsg.textContent = "Пожалуйста, укажите имя и фамилию.";
-      errorMsg.style.display = "block";
-      return false;
+  // Открыть модаль
+  mainRegisterBtn.addEventListener('click', () => {
+    mainPage.style.display = 'none';
+    registrationModal.classList.add('show');
+    firstName.focus();
+
+    if (tg) {
+      tg.MainButton.hide();
     }
-    if (!isValidEmail(data.email)) {
-      errorMsg.textContent = "Введите корректный e‑mail.";
-      errorMsg.style.display = "block";
-      return false;
+  });
+
+  // Закрыть модаль
+  closeModalBtn.addEventListener('click', () => {
+    registrationModal.classList.remove('show');
+    mainPage.style.display = 'flex';
+    clearErrors();
+    firstName.value = '';
+    lastName.value = '';
+    email.value = '';
+    phone.value = '';
+
+    if (tg) {
+      tg.MainButton.hide();
     }
-    if (!isValidPhone(data.phone)) {
-      errorMsg.textContent = "Введите корректный телефон.";
-      errorMsg.style.display = "block";
-      return false;
-    }
-    errorMsg.style.display = "none";
-    return true;
-  }
+  });
 
-  // Подключаем Telegram MainButton (если внутри web app)
-  if (tg) {
-    // Развернуть окно, если нужно
-    try { tg.expand(); } catch (e) {}
+  // Отправить
+  submitBtn.addEventListener('click', () => {
+    if (!validate()) return;
 
-    tg.MainButton.setText("Отправить заявку");
-    tg.MainButton.setParams({ color: "#2A9DF4", text_color: "#ffffff" });
-    tg.MainButton.show();
-    tg.MainButton.disable();
+    const payload = gatherData();
 
-    function onInputChange() {
-      tg.MainButton.setText("Отправить заявку");
-      if (validate()) {
-        tg.MainButton.enable();
-      } else {
-        tg.MainButton.disable();
-      }
-    }
-
-    // Включаем проверку на изменение полей
-    [firstName, lastName, email, phone].forEach(el => el.addEventListener('input', onInputChange));
-
-    // Обработка клика по главной кнопке Telegram
-    tg.MainButton.onClick(function() {
-      if (!validate()) return;
-      const payload = gatherData();
-      // Отправляем данные боту через Web App (будут доступны в web_app_data)
+    if (tg) {
       tg.sendData(JSON.stringify(payload));
-      // Можно закрыть web app
       try { tg.close(); } catch(e) {}
-    });
-  } else {
-    // Fallback кнопка — отправляем данные на консоль или используем fetch на API
-    fallbackBtn.addEventListener('click', () => {
-      if (!validate()) return;
-      const payload = gatherData();
-      // Пример: в web-версии просто показываем JSON (или отправляем на сервер)
-      alert("Данные для отправки:\n" + JSON.stringify(payload, null, 2));
-      // Если нужно отправлять на сервер — раскомментируйте fetch с вашим endpoint
-      /*
-      fetch('/api/submit', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
-      }).then(r => r.json()).then(res => {
-        alert('Заявка отправлена');
-      }).catch(err => {
-        alert('Ошибка отправки');
-      });
-      */
-    });
+    } else {
+      alert("Данные:\n" + JSON.stringify(payload, null, 2));
+    }
+  });
+
+  // Инициализация Telegram
+  if (tg) {
+    try { tg.expand(); } catch (e) {}
   }
 
-  // Удобство: сохранить фокус на первом поле
   firstName.focus();
 </script>
 </body>
 </html>
-
